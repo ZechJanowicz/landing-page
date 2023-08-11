@@ -1,3 +1,102 @@
 p {
     color: red;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+    background-color: #fbfbfb;
+    margin: 0
+}
+
+.heading {
+    font-family: 'Caveat', cursive;    
+    font-size: 45px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #eaeaea;
+    align-items: center;
+    box-shadow: 10px 10px 10px #858484;
+    height: 130px;
+}
+
+
+
+.right-heading {
+    padding: 15px;
+    gap: 8px;
+}
+
+.header-button {
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 40px;
+    background-color: #eaeaea;
+    width: 300px;
+    box-shadow: 10px 10px 10px #858484;
+}
+
+.summary-container {
+    display: flex;
+    background-color: blue;
+    height: stretch;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.summary-bar {
+    color: white;
+    background-color: red;
+    flex: 1;
+    width: 100%
+}
+
+.link-bar {
+    background-image: url("../images/sakuratree.gif");
+    background-repeat: no-repeat;
+    background-color: orange;
+    background-size: 100% 700px;
+    flex: 2; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+}
+
+.event-bar {
+    background-color: rgb(35, 221, 106);
+    flex: 1; 
+    width: 100%;
+}
+
+.footer {
+    height: 60px;
+    background-color: #eaeaea;
+    display: flex;
+    box-shadow: 10px 10px 10px 10px #858484;
+}
+
+
