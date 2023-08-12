@@ -8,25 +8,39 @@ body {
     flex: 1;
     min-height: 100vh;
     background-color: #fbfbfb;
-    margin: 0
+    margin: 0;
+    min-width: 750px;
 }
+
 
 .heading {
-    font-family: 'Caveat', cursive;    
-    font-size: 45px;
+    font-family: 'Caveat';
+    font-size: 40px;
     display: flex;
     justify-content: space-between;
-    background-color: #eaeaea;
+    background-color: #4662AE;
     align-items: center;
     box-shadow: 10px 10px 10px #858484;
-    height: 130px;
+    height: 90px;
+    width: 100%;
+    position: relative;
+    min-width: 100%;
 }
 
+.heading:nth-child(1) {
+    color: white;
+}
 
+.left-heading {
+    display: flex;;
+    flex-shrink: 0;
+}
 
 .right-heading {
+    display: flex;
     padding: 15px;
     gap: 8px;
+    flex-wrap: 1;
 }
 
 .header-button {
@@ -39,27 +53,43 @@ body {
     display: flex;
     flex: 1;
     flex-direction: row;
+    flex-shrink: 1;
 }
 
 .sidebar {
-    width: 40px;
-    background-color: #eaeaea;
-    width: 300px;
+    background-color: #C8D4FA;
+    width: 150px;
     box-shadow: 10px 10px 10px #858484;
+    text-align: center;
+    position: relative;
+    flex-shrink: 0;
+}
+
+li 
+{
+    list-style-type: none;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+p 
+{
+    margin-left: 20px
 }
 
 .summary-container {
     display: flex;
-    background-color: blue;
+    background-color: #C8D4FA;
     height: stretch;
     width: 100%;
     align-items: center;
     flex-direction: column;
+    flex-shrink: 1;
+    flex-wrap: wrap;
 }
 
 .summary-bar {
     color: white;
-    background-color: red;
     flex: 1;
     width: 100%
 }
@@ -67,14 +97,15 @@ body {
 .link-bar {
     background-image: url("../images/sakuratree.gif");
     background-repeat: no-repeat;
-    background-color: orange;
     background-size: 100% 700px;
     flex: 2; 
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    overflow: auto;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .tab {
@@ -87,16 +118,15 @@ body {
 }
 
 .event-bar {
-    background-color: rgb(35, 221, 106);
     flex: 1; 
     width: 100%;
 }
 
 .footer {
-    height: 60px;
-    background-color: #eaeaea;
+    position: relative;
+    height: 30px;
+    background-color: #4662AE;
     display: flex;
-    box-shadow: 10px 10px 10px 10px #858484;
 }
 
 
