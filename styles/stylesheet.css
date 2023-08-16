@@ -84,6 +84,30 @@ button:active {
     flex-shrink: 1;
 }
 
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #4862AE;
+    box-shadow: 0px 7px 42px 0px rgba(0, 0, 0,0.85);
+}
+
+img:hover {
+    transform: scale(1.5);
+    transition-duration: .5s;
+}
+
+.img-text {
+    position: absolute;
+    top: 430px;
+    background-color: #857c7c;
+    font-size: 20px;
+    color: #212636;
+    font-weight: bold;
+}
+
 .sidebar {
     background-color: #C8D4FA;
     width: 180px;
@@ -159,8 +183,9 @@ p
     align-items: center;
     height: 200px;
     width: 200px;
-    background-color: yellow;
 }
+
+
 
 .event-bar {
     flex: 1; 
